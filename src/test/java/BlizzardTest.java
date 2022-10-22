@@ -8,8 +8,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import pages.BlizzardPage;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.ResourceBundle;
@@ -44,15 +42,15 @@ public class BlizzardTest extends Base {
             Thread.sleep(1000);
         }
     @Test
-    public void checkMovaText(){
-        Assert.assertEquals(blizzardPage.getElement(),bundle.getString("download"));
+    public void checkLearnMore(){
+        Assert.assertEquals(blizzardPage.getElement(),bundle.getString("news"));
 
 
     }
 
 
     @Test
-    public void testTab2(){
+    public void checkTypeOfGame(){
         Assert.assertEquals(blizzardPage.getTypesOfGame(),bundle.getString("typegame"));
     }
 
