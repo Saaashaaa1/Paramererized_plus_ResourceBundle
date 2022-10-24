@@ -28,8 +28,6 @@ public class BlizzardTest extends Base {
         driver.get("http://" +  "www.blizzard.com/" + lang.getCode());  //https://www.blizzard.com/it-it/
         this.lang = lang;
         bundle =ResourceBundle.getBundle(lang.getCode());
-
-
     }
     @Before
     public void beforeTestMethod() {
