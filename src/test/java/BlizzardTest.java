@@ -25,7 +25,7 @@ public class BlizzardTest extends Base {
     }
 
     public BlizzardTest(Language lang) {
-        driver.get("http://" +  "www.blizzard.com/" + lang.getCode());  //https://www.blizzard.com/it-it/
+        driver.get("http://" +  "www.blizzard.com/" + lang.getCode()+"/");  //https://www.blizzard.com/it-it/
         this.lang = lang;
         bundle =ResourceBundle.getBundle(lang.getCode());
     }

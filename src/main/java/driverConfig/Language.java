@@ -1,9 +1,9 @@
 package driverConfig;
 
 public enum Language {
-        english("en-us/"),
-        polski("pl-pl/"),
-        italiano("it-it/");
+        EN("en-us"),
+        PL("pl-pl"),
+        IT("it-it");
 
 
 
